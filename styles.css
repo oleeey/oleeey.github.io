@@ -50,7 +50,6 @@
   
   
   #welcome-section {
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +58,7 @@
   }
   
   .container {
-    height: 110vh;
+    height: 100vh;
   }
   
   
@@ -77,6 +76,7 @@
     font-style: italic;
   }
   
+  /*
   #projects {
     background: var(--background-2);
   }
@@ -88,6 +88,7 @@
     font-size: 2.4rem;
     border-bottom: 0.15rem solid var(--text-color);
   }
+
   
   @media screen and (min-width: 600px){
     .projects-grid {
@@ -118,11 +119,7 @@
       object-fit: cover;
     }
   }
-  
-  
-  
-  
-  
+
   .project-title {
     margin: 0;
     padding: 20px 0;
@@ -162,11 +159,12 @@
   .btn-show-all:hover i {
    transform: translateX(10%);
   }
+
+  */
   
   
   #contact {
     background: var(--background-3);
-    height: 90vh;
   }
   
   #contact h2 {
