@@ -76,7 +76,7 @@
     font-style: italic;
   }
   
-  /*
+  
   #projects {
     background: var(--background-2);
   }
@@ -159,9 +159,6 @@
   .btn-show-all:hover i {
    transform: translateX(10%);
   }
-
-  */
-  
   
   #contact {
     background: var(--background-3);
