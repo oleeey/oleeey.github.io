@@ -1,204 +1,44 @@
-* {
-    box-sizing: border-box;
+body {
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-  }
-  
-  :root {
-    --nav-color: darkorange;
-    --background-1: #313336;
-    --background-2: #45567d;
-    --background-3: #303841;
-    --text-color: white;
-    --projects-color: #303841;
-  }
-  
-  html {
-    font-family: Sans-serif;
-    scroll-behavior: smooth;
-  }
-  
-  body {
-    text-align: center;
-    color: var(--text-color);
-  }
-  
-  
-  #navbar {
-    width: 100%;
-    background-color: var(--nav-color);
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
-    padding: 20 30px;
-    border-bottom: 2px solid black;
-    z-index: 1;
-  }
-  
-  a {
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 1.3rem;
-  }
-  
-  #navbar a:hover {
-    background: var(--background-1);
-  }
-  
-  
-  #welcome-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: var(--background-1);
-  }
-  
-  .container {
-    height: 100vh;
-  }
-  
-  
-  #welcome-section h1 {
-    font-size: 3rem;
-  }
-  
-  #welcome-section p {
-    color: var(--nav-color);
-    font-size: 1.5rem;
-    margin-top: 10px;
-  }
-  
-  .italic {
-    font-style: italic;
-  }
-  
-  
-  #projects {
-    background: var(--background-2);
-  }
-  
-  #projects h1 {
-    max-width: 600px;
-    margin: 0 auto 40px auto;
-    padding-top: 15vh;
-    font-size: 2.4rem;
-    border-bottom: 0.15rem solid var(--text-color);
-  }
+}
 
-  
-  @media screen and (min-width: 600px){
-    .projects-grid {
-      margin: 20px auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(260px, 1fr));
-      grid-column-gap: 30px;
-    }
-  
-    .project-image {
-      height: calc(100% - 6.8rem);
-      width: 100%;
-      object-fit: cover;
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .projects-grid {
-      margin: 20px auto;
-      display: flex;
-      flex-direction: column;
-        gap: 50px;
-    }
-  
-    .project-image {
-      max-height: 90px;
-      width: 100%;
-      object-fit: cover;
-    }
-  }
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
 
-  .project-title {
-    margin: 0;
+header {
+    background-color: #333;
+    color: #fff;
     padding: 20px 0;
-    background: var(--projects-color);
-  }
-  
-  
-  .code {
-    color: var(--projects-color); 
-    transition: color 0.3s ease-out;
-  }
-  
-  .projects-grid a:hover .code{
-    color: var(--nav-color);
-  }
-  
-  .btn-show-all {
-    width: 150px;
-    background: var(--projects-color);
-    padding: 10px;
-    transition: background 0.3s ease-out;
-    
-  }
-  
-  .btn-show-all:hover {
-    background: var(--nav-color)
-  }
-  
-  .btn-show-all i {
-    position: relative;
-    margin-left: 5px;
-    transform: translateX(0);
-    transition: transform 0.3s ease-out;
-    z-index: 0;
-  }
-  
-  .btn-show-all:hover i {
-   transform: translateX(10%);
-  }
-  
-  #contact {
-    background: var(--background-3);
-  }
-  
-  #contact h2 {
-    font-size: 3rem;
-  }
-  
-  #contact p {
-    font-style: italic;
-  }
-  
-  .contact-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    gap: 10px;
-  }
-  
-  .contact-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    gap: 50px;
-    margin-top: -40vh;
-  }
-  
-  footer {
-    background: var(--background-3);
-    text-align: right;
-    font-weight: 300;
-    padding: 2rem;
-    border-top: 4px solid var(--nav-color);
-  }
-  
-  footer a {
-    font-size: 1rem;
-  }
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0 0;
+}
+
+section#projects {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
