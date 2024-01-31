@@ -78,3 +78,7 @@ a:hover {
 h2 {
     margin-bottom: 20px;
 }
+
+h1 a {
+    color: #ecf0f1;
+}
